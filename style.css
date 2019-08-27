@@ -1,0 +1,9 @@
+body {
+    background-color: darkgrey;
+}
+p,h4,#p { 
+    color: red;
+}
+/* #p {
+    color: darkslategrey;
+} */
