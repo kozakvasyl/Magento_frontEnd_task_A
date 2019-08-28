@@ -93,3 +93,24 @@ a {
 
 
 /* ______SLIDER styles_______ */
+
+.slider {
+    width: 100%;
+    height: 492px;
+    background-image: url(img/sliderA.png);
+    position: relative;
+}
+
+.text-name {
+    display: block;
+    position: absolute;
+    margin: 0px auto;
+    top: 30%;
+    color: #d3d2d2;
+    text-transform: uppercase;
+}
+
+.decription {
+    display: block;
+    position: absolute;
+}
