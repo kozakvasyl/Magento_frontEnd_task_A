@@ -18,7 +18,7 @@ a {
 }
 
 
-/* _____________HEADER styles___________ */
+/* _____________HEADER-top styles___________ */
 
 .header-top {
     background-color: #303030;
@@ -98,5 +98,65 @@ a {
     }
     .container {
         height: 50px;
+    }
+}
+
+
+/* _____________HEADER-bottom styles___________ */
+
+.header-bottom {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    font-size: 30px;
+    margin: 0 auto;
+    color: #303030;
+    margin-bottom: 40px;
+}
+
+.logo span {
+    font-weight: bolder;
+    color: #ffc222;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    /* display: inline-block; */
+    color: #303030;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 2px solid white;
+}
+
+li a:hover {
+    border: 2px solid #ffc222;
+}
+
+@media screen and (min-width: 450px) {
+    li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .logo {
+        display: inline-block;
+        float: left;
+    }
+    ul {
+        display: inline-block;
+        float: right;
+        padding-top: 12px;
     }
 }
