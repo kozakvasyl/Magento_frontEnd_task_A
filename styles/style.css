@@ -1,5 +1,4 @@
 /* _____________GENERAL styles___________ */
-
 body {
     padding: 0;
     margin: 0;
@@ -17,9 +16,7 @@ a {
     margin: 0 auto;
 }
 
-
 /* _____________HEADER styles___________ */
-
 .header-top {
     background-color: #303030;
 }
@@ -36,10 +33,12 @@ a {
 }
 
 .contacts a:first-child::before {
+    /* content: url(/Magento_frontEnd_task_A/img/phone.png); */ /* Why it doesn't work??? */
     content: '📞';
     color: #ffc222;
     margin-right: 5px;
 }
+
 
 .contacts a:last-child::before {
     content: '✉️';
@@ -73,5 +72,27 @@ a {
 @media screen and (min-width: 450px) {
     .contacts a {
         display: inline-block;
+    }
+    .contacts {
+        width: 350px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .contacts {
+        display: inline-block;
+        padding: 0;
+    }
+    .contacts a {
+        display: inline-block;
+        line-height: 50px;
+    }
+    .consultation {
+        float: right;
+        width: 230px;
+    }
+    .container {
+        height: 50px;
     }
 }
