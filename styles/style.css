@@ -278,3 +278,44 @@ h1 {
         padding: 0 20%;
     }
 }
+
+
+/* _____________SERVICES styles___________ */
+
+.line {
+    border-bottom: 2px solid #ffc222;
+    float: left;
+    width: 106px;
+    margin-right: 30px;
+    padding-top: 35px;
+}
+
+.services-content {
+    display: inline-block;
+}
+
+.services-content p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #5e5e5e;
+    max-width: 380px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.show a {
+    display: inline-block;
+    padding: 8px 10px;
+    border: 2px solid #5e5e5e;
+    color: #373636;
+}
+
+@media screen and (min-width: 720px) {
+    .show {
+        display: inline-block;
+        float: right;
+        margin: 50% auto;
+        margin-right: 20px;
+    }
+}
