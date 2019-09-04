@@ -13,7 +13,6 @@ a {
 .container {
     width: 100%;
     max-width: 1160px;
-    padding-right: 0;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -161,18 +160,17 @@ li a:hover {
 /* _____________MAIN styles___________ */
 
 .main {
-    position: relative;
     background-color: #0e0000;
-    height: 497px;
     overflow: hidden;
+    height: 490px;
 }
 
 .main-image {
     position: relative;
     z-index: 2;
     opacity: 0.5;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
 .main-container {
@@ -182,6 +180,7 @@ li a:hover {
     left: 0;
     right: 0;
     margin: 0 auto;
+    max-width: 1160px;
 }
 
 .main-content {
@@ -193,37 +192,89 @@ li a:hover {
     right: 0;
     margin: 0 auto;
     text-align: center;
-    padding-top: 130px;
+    padding: 20% 0;
 }
 
 .main-text {
-    padding: 0 30%;
+    color: #d3d2d2;
+    padding: 0 10%;
+    margin-bottom: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
-    margin: 0;
-    font-size: 30px;
+    margin: 0 10px;
+    font-size: 20px;
     font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.apply {
+    width: 160px;
+    padding: 8px 10px;
+    border: 2px solid #ffc222;
+    display: inline-block;
+    position: relative;
+}
+
+.apply a {
+    color: #ffffff;
+}
+
+.apply a::after {
+    content: url(../img/arrow.png);
+    right: -2px;
+    top: -2px;
+    background-color: #ffc222;
+    position: absolute;
+    width: 21px;
+    height: 29px;
+    padding-top: 10px;
 }
 
 .slick-arrow {
-    display: inline-block;
+    position: absolute;
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #ffffff;
-    margin: 20% 0;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    top: 25%;
+}
+
+.slick-arrow:hover {
+    background-color: #ffc222;
 }
 
 .slick-prev {
-    float: left;
-    background-color: #ffc222;
+    left: 10px;
     background-image: url(../img/arrow.png);
+    transform: rotate(180deg);
 }
 
 .slick-next {
-    float: right;
+    right: 10px;
     background-image: url(../img/arrow.png);
-    background-color: #ffc222;
+}
+
+@media screen and (min-width: 450px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .main-image {
+        width: 100%;
+        height: auto;
+    }
+    .main-content {
+        top: 130px;
+        padding: 0;
+    }
+    .main-text {
+        padding: 0 20%;
+    }
 }
