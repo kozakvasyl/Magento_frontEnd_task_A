@@ -22,6 +22,10 @@ ul {
     margin: 0;
 }
 
+h1 {
+    margin: 0;
+}
+
 
 /* _____________HEADER-top styles___________ */
 
@@ -41,16 +45,12 @@ ul {
 }
 
 .contacts a:first-child::before {
-    /* content: url(/Magento_frontEnd_task_A/img/phone.png); */
-    /* Why it doesn't work??? */
-    content: '📞';
-    color: #ffc222;
+    content: url(../img/phone.png);
     margin-right: 5px;
 }
 
 .contacts a:last-child::before {
-    content: '✉️';
-    color: #ffc222;
+    content: url(../img/mail.png);
     margin-left: 15px;
     margin-right: 5px;
 }
@@ -63,8 +63,7 @@ ul {
 }
 
 .consultation a:before {
-    content: '💼';
-    color: #303030;
+    content: url(../img/pack.svg);
     margin-right: 5px;
 }
 
@@ -164,11 +163,36 @@ li a:hover {
 
 /* _____________MAIN styles___________ */
 
-main {
-    height: 498px;
+.main {
+    background-image: url(../img/sliderA.jpg);
+    height: 497px;
+    width: 100%;
 }
 
-.slider-image {
-    width: 100%;
-    height: auto;
+.main-content {
+    display: inline-block;
+    padding-top: 130px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.slick-arrow {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+}
+
+.slick-prev {
+    float: left;
+    background-color: #ffc222;
+    background-image: url(../img/arrow.png);
+}
+
+.slick-next {
+    float: right;
+    background-image: url(../img/arrow.png);
+    background-color: #ffc222;
 }
