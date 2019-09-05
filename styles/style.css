@@ -219,6 +219,7 @@ h1 {
 
 .apply a {
     color: #ffffff;
+    font-weight: 500;
 }
 
 .apply a::after {
@@ -297,7 +298,7 @@ h1 {
 .services-content p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #5e5e5e;
-    max-width: 380px;
+    max-width: 360px;
 }
 
 h2 {
@@ -305,17 +306,88 @@ h2 {
 }
 
 .show a {
-    display: inline-block;
-    padding: 8px 10px;
-    border: 2px solid #5e5e5e;
-    color: #373636;
+    display: none;
 }
 
 @media screen and (min-width: 720px) {
-    .show {
+    .services-top {
+        position: relative;
+        height: 150px;
+    }
+    .show a {
+        position: absolute;
         display: inline-block;
-        float: right;
-        margin: 50% auto;
-        margin-right: 20px;
+        right: 20px;
+        top: 50px;
+        padding: 8px 10px;
+        border: 2px solid #5e5e5e;
+        color: #373636;
+    }
+}
+
+
+/* _____________blocks styles___________ */
+
+.services-bottom {
+    position: relative;
+    padding-top: 10px;
+}
+
+.block {
+    width: 320px;
+    height: 320px;
+    display: block;
+    box-shadow: 0 0 10px #8a8989;
+    background-color: #f9f9f9;
+    margin: 20px auto;
+    padding: 30px 40px;
+    text-align: center;
+    position: relative;
+}
+
+.block p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #5e5e5e;
+}
+
+.block-icon {
+    width: 67px;
+    height: 67px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.bankruptcy {
+    background-image: url(../img/bankruptcy.png);
+}
+
+.lawyer {
+    background-image: url(../img/lawyer.png);
+}
+
+.taxes {
+    background-image: url(../img/taxes.png);
+}
+
+.block-more {
+    position: absolute;
+    bottom: 40px;
+}
+
+.block-more>a {
+    text-decoration: underline;
+    color: #303030;
+    margin-right: 75px;
+}
+
+.block-more .apply a {
+    color: #0e0000;
+}
+
+@media screen and (min-width: 720px) {
+    .block {
+        display: inline-block;
+        margin: 0;
     }
 }
